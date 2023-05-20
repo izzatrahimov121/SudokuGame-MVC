@@ -1,0 +1,428 @@
+﻿@model GameViewModel
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel="stylesheet" media="all" type="text/css" href="../assets/sudokuJS.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style type="text/css">
+		html,
+		body {
+			background-color: #abe4fc;
+		}
+
+		table {
+			border: 2px solid #000000;
+		}
+
+		td {
+			border: 1px solid #000000;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		input {
+			color: #000000;
+			padding: 0;
+			border: 0;
+			text-align: center;
+			width: 48px;
+			height: 48px;
+			font-size: 24px;
+			background-color: #FFFFFF;
+			outline: none;
+		}
+
+			input:disabled {
+				background-color: #EEEEEE;
+			}
+
+		#cell-0,
+		#cell-1,
+		#cell-2 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-2,
+		#cell-11,
+		#cell-20 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-18,
+		#cell-19,
+		#cell-20 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-0,
+		#cell-9,
+		#cell-18 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-3,
+		#cell-4,
+		#cell-5 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-5,
+		#cell-14,
+		#cell-23 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-21,
+		#cell-22,
+		#cell-23 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-3,
+		#cell-12,
+		#cell-21 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-6,
+		#cell-7,
+		#cell-8 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-8,
+		#cell-17,
+		#cell-26 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-24,
+		#cell-25,
+		#cell-26 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-6,
+		#cell-15,
+		#cell-24 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-27,
+		#cell-28,
+		#cell-29 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-29,
+		#cell-38,
+		#cell-47 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-45,
+		#cell-46,
+		#cell-47 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-27,
+		#cell-36,
+		#cell-45 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-30,
+		#cell-31,
+		#cell-32 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-32,
+		#cell-41,
+		#cell-50 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-48,
+		#cell-49,
+		#cell-50 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-30,
+		#cell-39,
+		#cell-48 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-33,
+		#cell-34,
+		#cell-35 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-35,
+		#cell-44,
+		#cell-53 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-51,
+		#cell-52,
+		#cell-53 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-33,
+		#cell-42,
+		#cell-51 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-54,
+		#cell-55,
+		#cell-56 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-56,
+		#cell-65,
+		#cell-74 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-72,
+		#cell-73,
+		#cell-74 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-54,
+		#cell-63,
+		#cell-72 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-57,
+		#cell-58,
+		#cell-59 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-59,
+		#cell-68,
+		#cell-77 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-75,
+		#cell-76,
+		#cell-77 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-57,
+		#cell-66,
+		#cell-75 {
+			border-left: 2px solid #000000;
+		}
+
+		#cell-60,
+		#cell-61,
+		#cell-62 {
+			border-top: 2px solid #000000;
+		}
+
+		#cell-62,
+		#cell-71,
+		#cell-80 {
+			border-right: 2px solid #000000;
+		}
+
+		#cell-78,
+		#cell-79,
+		#cell-80 {
+			border-bottom: 2px solid #000000;
+		}
+
+		#cell-60,
+		#cell-69,
+		#cell-78 {
+			border-left: 2px solid #000000;
+		}
+	</style>
+	<title>Game | Sudoku.az</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		  integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="../assets/sudokuJS.js"></script>
+</head>
+
+<body style="background-color: #abe4fc;" >
+	<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #00b3ff;">
+		<div class="container-fluid">
+			<div class="navbar-nav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="navbar-brand" href="../game/user-profile.html">
+							<img src="../assets/images/user/default_user_photo.png" alt="Avatar Logo"
+								 style="width:50px;" class="rounded-pill">
+						</a>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+							<a style="margin-top: 7px ;background-color: #00b3ff00; border: none;color:black; font-size: 20px;"
+							   class="nav-link h6 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+							   aria-haspopup="true" aria-expanded="false">
+								Player
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="user-profile.html">
+									<i class="fa fa-user"
+									   aria-hidden="true"></i> My
+									account
+								</a>
+								<a class="dropdown-item" href="#">
+									<i class="fa fa-sign-out" aria-hidden="true"></i> Log
+									out
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<ul class="navbar-nav d-flex">
+				<li class="nav-item" style="margin-right: 15px;">
+					<a class="nav-link h6" href="index.html" style="font-size: 20px;">
+						<i class="fa fa-home"
+						   aria-hidden="true"></i> Home
+					</a>
+				</li>
+				<li class="nav-item" style="margin-right: 15px;">
+					<a class="nav-link h6" href="index.html" style="font-size: 20px;">
+						<i class="fa-solid fa-ranking-star"></i>
+						Level: Test
+					</a>
+				</li>
+				<li class="nav-item" style="margin-right: 15px;">
+					<a class="nav-link h6" href="awards.html" style="font-size: 20px;">
+						<i class="fa fa-trophy"
+						   aria-hidden="true"></i> Awards
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link h6" href="world-ranking.html" style="font-size: 20px;">
+						<i class="fa fa-globe"
+						   aria-hidden="true"></i> World Ranking: 11
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<style>
+		input[type="number"]::-webkit-inner-spin-button,
+		input[type="number"]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	</style>
+
+
+	<h1 >Game Mode : @ViewBag.Mode  </h1>
+	<div class="d-flex justify-content-center container">
+
+		<table id="grid" style="margin-top: 50px;">
+			@{
+				int count = 0;
+
+				@for (int row = 0; row < 9; row++)
+				{
+					<tr>
+						@for (int col = 0; col < 9; col++)
+						{
+							<td><input class="myInput" id="cell-@count" type="number" min="1" max="9" data-id="@count" data-row="@row" data-col="@col" value="@Model.Matrix[row,col]"></td>
+							count = count + 1;
+						}
+					</tr>
+				}
+			}
+		</table>
+
+		@{
+			// C# matrisini JSON formatına dönüştürme
+			string jsonMatrix = Newtonsoft.Json.JsonConvert.SerializeObject(Model.FullMatrix);
+		}
+
+		<script>
+			for (i = 0; i < 81; i++) {
+				var val = document.querySelector('#cell-' + i)
+				if (val.value != "0") {
+					val.disabled = true;
+				}
+				if (val.value == "0") {
+					val.value = "";
+				}
+			}
+		</script>
+
+		<script>
+			$('.myInput').keyup(function () {
+				let val = $(this).val();
+				if (val > 9 || val < 1) {
+					$(this).val('');
+				}
+			})
+		</script>
+
+		<script>
+			$('.myInput').keyup(function (e) {
+				var keyCode = e.keyCode;
+				if (keyCode >= 49 && keyCode <= 57 || keyCode >= 97 && keyCode <= 105) {
+					let id = $(this).data('id');
+
+					var inp = document.querySelector("#cell-" + id);
+					var row = $(this).data('row');
+					var col = $(this).data('col');
+					var value = $('#cell-'+id).val();
+
+					var matrix = @Html.Raw(jsonMatrix);
+
+					if (value == matrix[row][col]) {
+						inp.style.backgroundColor = "#60ee88"
+					}
+					else {
+						inp.style.backgroundColor = "#ee6460"
+					}
+				}
+			})
+		</script>
+
+
+
+
+	</div>
+</body>
+
+</html>

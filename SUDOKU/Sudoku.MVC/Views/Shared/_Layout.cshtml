@@ -1,0 +1,93 @@
+﻿
+@{
+    string username = ViewBag.UserName;
+    string UserProfilPhoto = ViewBag.UserProfilPhoto;
+    string level = ViewBag.Level;
+    string rank = ViewBag.WorldRanking;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku.az</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../assets/sudokuJS.js"></script>
+</head>
+
+<body>
+    <video playsinline autoplay muted loop style="position:fixed; z-index: -2; width: 100%;">
+        <source src="../assets/video/sudoku-background.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #00b3ff;">
+        <div class="container-fluid">
+            <div class="navbar-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                            <img src="../assets/images/user/@UserProfilPhoto" alt="Avatar Logo"
+                                style="width:50px;" class="rounded-pill">
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a style="margin-top: 7px ;background-color: #00b3ff00; border: none;color:black; font-size: 20px;"
+                                class="nav-link h6 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                @username
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="user-profile.html"><i class="fa fa-user"
+                                        aria-hidden="true"></i> My account</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Log
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="navbar-nav d-flex">
+                <li class="nav-item" style="margin-right: 15px;">
+                    <a class="nav-link h6" href="index.html" style="font-size: 20px;"><i class="fa fa-home"
+                            aria-hidden="true"></i> Home</a>
+                </li>
+                <li class="nav-item" style="margin-right: 15px;">
+                    <a class="nav-link h6" href="index.html" style="font-size: 20px;">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        Level: @level
+                    </a>
+                </li>
+                <li class="nav-item" style="margin-right: 15px;">
+                    <a class="nav-link h6" href="awards.html" style="font-size: 20px;"><i class="fa fa-trophy"
+                            aria-hidden="true"></i> Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6" href="world-ranking.html" style="font-size: 20px;"><i class="fa fa-globe"
+                            aria-hidden="true"></i> World Ranking: @rank</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--End NAVBAR area-->
+
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

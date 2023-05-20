@@ -1,0 +1,64 @@
+﻿@model HomeViewModel
+@{
+	ViewData["Title"] = "index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="d-flex justify-content-center">
+	<div style="margin-top:100px; width: 700px; height: 300px; background-color:black; z-index: -1; opacity: 90%;">
+	</div>
+	<div style=" position: fixed ;margin-top:100px; width: 700px; height: 300px;">
+
+
+		<div class="d-flex justify-content-center" style="margin-top: 30px">
+			@using (Html.BeginForm("Index","Home",FormMethod.Post))
+			{
+				@Html.RadioButtonFor(m=>m.GameMode,"Easy",new { id = "btn-check-easy", @class = "btn-check" });
+				@*<input asp-for="GameMode" type="radio" class="btn-check" value="easy" id="btn-check-easy">*@
+				<label class="btn btn-info" style="width: 95px; margin-right: 5px;" 
+					   for="btn-check-easy">Easy</label>
+
+				@Html.RadioButtonFor(m => m.GameMode,"medium",new { id = "btn-check-medium", @class = "btn-check" });
+				@*<input asp-for="GameMode" type="radio" class="btn-check" value="medium" id="btn-check-medium">*@
+				<label class="btn btn-success" style="width: 95px; margin-right: 5px;"
+					   for="btn-check-medium">Medium</label>
+
+				@Html.RadioButtonFor(m => m.GameMode,"hard",new { id = "btn-check-hard", @class = "btn-check" });
+				@*<input asp-for="GameMode" type="radio" class="btn-check" value="hard" id="btn-check-hard">*@
+				<label class="btn btn-primary" style="width: 95px; margin-right: 5px;" 
+					   for="btn-check-hard">Hard</label>
+
+				@Html.RadioButtonFor(m => m.GameMode,"expert",new { id = "btn-check-expert", @class = "btn-check" });
+				@*<input asp-for="GameMode" type="radio" class="btn-check" value="expert" id="btn-check-expert">*@
+				<label class="btn btn-warning" style="width: 95px; margin-right: 5px;"
+					   for="btn-check-expert">Expert</label>
+
+				@Html.RadioButtonFor(m => m.GameMode,"evil",new { id = "btn-check-evil", @class = "btn-check" });
+				@*<input asp-for="GameMode" type="radio" class="btn-check" value="evil" id="btn-check-evil">*@
+				<label class="btn btn-danger" style="width: 90px;" 
+					   for="btn-check-evil">Evil</label>
+
+
+				<div class="d-flex justify-content-center">
+					<button type="submit"  id="newgame" class="btn btn-primary"
+				   style=" width: 500px;height: 100px;font-size: 40px; margin-top:50px;">
+						New Game
+					</button>
+				</div>
+			}
+
+
+			@*<script>
+			function myFunction() {
+			let mode = document.getElementsByClassName("btn-check");
+			for (i = 0; i < mode.length; i++) {
+			if (mode[i].checked == true) {
+			@Model.GameMode.GameMode == mode[i].value.@ToString();
+			}
+			}
+			}
+			</script>*@
+		</div>
+	</div>
+</div>

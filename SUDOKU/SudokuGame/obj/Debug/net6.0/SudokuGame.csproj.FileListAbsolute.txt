@@ -1,0 +1,6 @@
+C:\Users\99455\Desktop\SudokuGameMVC\SUDOKU\SudokuGame\obj\Debug\net6.0\SudokuGame.csproj.AssemblyReference.cache
+C:\Users\99455\Desktop\SudokuGameMVC\SUDOKU\SudokuGame\obj\Debug\net6.0\SudokuGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99455\Desktop\SudokuGameMVC\SUDOKU\SudokuGame\obj\Debug\net6.0\SudokuGame.AssemblyInfoInputs.cache
+C:\Users\99455\Desktop\SudokuGameMVC\SUDOKU\SudokuGame\obj\Debug\net6.0\SudokuGame.AssemblyInfo.cs
+C:\Users\99455\Desktop\SudokuGameMVC\SUDOKU\SudokuGame\obj\Debug\net6.0\SudokuGame.csproj.CoreCompileInputs.cache
+C:\Users\99455\Desktop\SudokuGameMVC\SUDOKU\SudokuGame\obj\Debug\net6.0\SudokuGame.MvcApplicationPartsAssemblyInfo.cache
