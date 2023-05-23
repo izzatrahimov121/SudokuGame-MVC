@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_9.png"
     },
     {
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\gameOver.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\gameOver.jpeg"
+    },
+    {
       "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\sudoku-background.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\sudoku-background.jpeg"
     },

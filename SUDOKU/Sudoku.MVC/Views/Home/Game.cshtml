@@ -275,10 +275,11 @@
 			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
 			crossorigin="anonymous"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="https://kit.fontawesome.com/0b9251f986.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="../assets/sudokuJS.js"></script>
 </head>
 
-<body style="background-color: #abe4fc;" >
+<body style="background-color: #abe4fc;">
 	<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #00b3ff;">
 		<div class="container-fluid">
 			<div class="navbar-nav">
@@ -350,13 +351,17 @@
 	</style>
 
 
-	<h1 >Game Mode : @ViewBag.Mode  </h1>
+	<h4>Game Mode : @ViewBag.Mode  </h4>
+	<div class="d-flex justify-content-center container" id="sure" style="font-size:20px; line-height:10px"></div>
 	<div class="d-flex justify-content-center container">
-
-		<table id="grid" style="margin-top: 50px;">
+		<div><h4 class="timer" id="timerarea" style="margin-right:15px">0:00</h4></div>
+		<button id="pauseButton" class="btn btn-secondary"><i class="fas fa-pause"></i></button>
+		<button id="resumeButton" class="btn btn-success"><i class="fas fa-play"></i></button>
+	</div>
+	<div class="d-flex justify-content-center container">
+		<table id="grid" style="margin-top: 20px;z-index:0;">
 			@{
 				int count = 0;
-
 				@for (int row = 0; row < 9; row++)
 				{
 					<tr>
@@ -370,12 +375,37 @@
 			}
 		</table>
 
+		<div class="card text-center col-md-6 mb-5" id="card" style="background-color: #000000;display:none;">
+			<div class="circle-image">
+				<img src="../assets/images/gameOver.jpeg" width="250" height="150">
+			</div>
+			<div class="rate bg-primary py-3 text-white mt-3">
+				<h3><i class="fa-light fa-hourglass-end fa-spin fa-xs"></i> 	&#xf2f2 <p class="timer"></p></h3>
+				<h3>Score: 260</h3>
+				<div class="rating justify-content-center">
+					<label id="star1" style="font-size: 50px;"><strong>&#11088</strong></label>
+					<label id="star2" style="font-size: 50px;"><strong>&#11088</strong></label>
+					<label id="star3" style="font-size: 50px;"><strong>&#11088</strong></label>
+				</div>
+				<div class="buttons px-4 mt-0">
+					<button class="btn btn-warning btn-block rating-submit" style="height: 50px;">OK</button>
+				</div>
+			</div>
+		</div>
+
 		@{
 			// C# matrisini JSON formatına dönüştürme
 			string jsonMatrix = Newtonsoft.Json.JsonConvert.SerializeObject(Model.FullMatrix);
 		}
 
+
+
+
+
+
+
 		<script>
+			//input validation
 			for (i = 0; i < 81; i++) {
 				var val = document.querySelector('#cell-' + i)
 				if (val.value != "0") {
@@ -385,18 +415,74 @@
 					val.value = "";
 				}
 			}
-		</script>
 
-		<script>
 			$('.myInput').keyup(function () {
 				let val = $(this).val();
 				if (val > 9 || val < 1) {
 					$(this).val('');
 				}
 			})
-		</script>
+			//end validation
 
-		<script>
+
+
+			//start timer
+			var timerElements = document.getElementsByClassName('timer');
+			var pauseButton = document.getElementById('pauseButton');
+			var resumeButton = document.getElementById('resumeButton');
+			var table = document.getElementById('grid');
+			var startTime, elapsedTime;
+			var timerInterval;
+
+			startTimer();
+			pauseButton.addEventListener('click', pauseTimer);
+			resumeButton.addEventListener('click', resumeTimer);
+
+			function startTimer() {
+				startTime = Date.now() - (elapsedTime || 0);
+				timerInterval = setInterval(updateTimer, 1000);
+				pauseButton.style.display = "block";
+				resumeButton.style.display = "none";
+			}
+
+			function pauseTimer() {
+				clearInterval(timerInterval);
+				elapsedTime = Date.now() - startTime;
+				pauseButton.style.display = "none";
+				table.style.display = "none";
+				resumeButton.style.display = "block";
+			}
+
+			function resumeTimer() {
+				startTime = Date.now() - elapsedTime;
+				timerInterval = setInterval(updateTimer, 1000);
+				pauseButton.style.display = "block";
+				resumeButton.style.display = "none";
+				table.style.display = "block";
+			}
+
+			function updateTimer() {
+				var seconds = Math.floor((Date.now() - startTime) / 1000);
+				var minutes = Math.floor(seconds / 60);
+				seconds = seconds % 60;
+				timerElements[0].textContent = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+				timerElements[1].textContent = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+			}
+			//end timer
+
+
+
+
+			//game
+			var failed = 0;
+			function endGame(){
+				pauseTimer();
+				document.querySelector('#grid').style.display = "none";
+				document.querySelector('#timerarea').style.display = "none";
+				document.querySelector('#pauseButton').style.display = "none";
+				document.querySelector('#resumeButton').style.display = "none";
+				document.querySelector('#card').style.display = "block";
+			}
 			$('.myInput').keyup(function (e) {
 				var keyCode = e.keyCode;
 				if (keyCode >= 49 && keyCode <= 57 || keyCode >= 97 && keyCode <= 105) {
@@ -405,21 +491,48 @@
 					var inp = document.querySelector("#cell-" + id);
 					var row = $(this).data('row');
 					var col = $(this).data('col');
-					var value = $('#cell-'+id).val();
+					var value = $('#cell-' + id).val();
 
 					var matrix = @Html.Raw(jsonMatrix);
-
+					var count = 0;
 					if (value == matrix[row][col]) {
 						inp.style.backgroundColor = "#60ee88"
 					}
 					else {
 						inp.style.backgroundColor = "#ee6460"
+						failed++;
+						count=82;
 					}
+					if (failed == 3) {
+						document.querySelector("#star1").style.display = "none";
+						document.querySelector("#star2").style.display = "none";
+						document.querySelector("#star3").style.display = "none";
+						endGame();
+					}
+
+					var input = document.getElementsByClassName("myInput");
+					for (var i = 0; i < 81; i++) {
+						if (input[i].value != "") {
+							count++;
+						}
+						console.log(count);
+					}
+					if (failed < 3 && count == 81) {
+						if (failed == 1) {
+							document.querySelector("#star3").style.display = "none";
+						}
+						if (failed == 2) {
+							document.querySelector("#star3").style.display = "none";
+							document.querySelector("#star2").style.display = "none";
+						}
+						endGame();
+					}
+					else { count = 0 }
 				}
 			})
+						//end game
+
 		</script>
-
-
 
 
 	</div>

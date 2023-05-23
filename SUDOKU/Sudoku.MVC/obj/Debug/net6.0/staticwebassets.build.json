@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xdFQKZQdMYGD2ww9e+RPFgyfe3aYMzpunu4KqoGKWbQ=",
+  "Hash": "BxiCLh7l50UBfAgWL+LaGFYUh37dX2UmIAsH0bDcZJg=",
   "Source": "Sudoku.MVC",
   "BasePath": "_content/Sudoku.MVC",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_9.png"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\gameOver.jpeg",
+      "SourceId": "Sudoku.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "BasePath": "_content/Sudoku.MVC",
+      "RelativePath": "assets/images/gameOver.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\gameOver.jpeg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\sudoku-background.jpeg",

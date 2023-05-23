@@ -57,4 +57,6 @@ public class HomeController : Controller
 		gameVM.FullMatrix = CreatedSudoku.fullsudoku();
 		return View(gameVM);
 	}
+
+	
 }

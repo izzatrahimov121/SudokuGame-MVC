@@ -128,7 +128,6 @@ public class CreatedSudoku
 	// matrix
 	bool fillRemaining(int i, int j)
 	{
-		//  System.out.println(i+" "+j);
 		if (j >= N && i < N - 1)
 		{
 			i = i + 1;
@@ -180,15 +179,11 @@ public class CreatedSudoku
 		while (count != 0)
 		{
 			int cellId = randomGenerator(N * N) - 1;
-
-			// System.out.println(cellId);
-			// extract coordinates i  and j
 			int i = (cellId / N);
 			int j = cellId % 9;
 			if (j != 0)
 				j = j - 1;
 
-			// System.out.println(i+" "+j);
 			if (mat[i, j] != 0)
 			{
 				count--;
@@ -210,7 +205,7 @@ public class CreatedSudoku
 	// Driver code
 	public static int[,] Create(string gameMode)
 	{
-		int k = 20;
+		int k = 2;
 		if (gameMode == "easy") { k = 15; }
 		if (gameMode == "medium") { k = 25; }
 		if (gameMode == "hard") { k = 40; }
@@ -235,57 +230,3 @@ public class CreatedSudoku
 		#endregion
 	}
 }
-
-
-//static bool IsSolved(int[,] sudoku)
-//{
-//	// check rows
-//	for (int i = 0; i < 9; i++)
-//	{
-//		HashSet<int> rowValues = new HashSet<int>();
-//		for (int j = 0; j < 9; j++)
-//		{
-//			if (sudoku[i, j] == 0 || rowValues.Contains(sudoku[i, j]))
-//			{
-//				return false;
-//			}
-//			rowValues.Add(sudoku[i, j]);
-//		}
-//	}
-
-//	// check columns
-//	for (int j = 0; j < 9; j++)
-//	{
-//		HashSet<int> columnValues = new HashSet<int>();
-//		for (int i = 0; i < 9; i++)
-//		{
-//			if (sudoku[i, j] == 0 || columnValues.Contains(sudoku[i, j]))
-//			{
-//				return false;
-//			}
-//			columnValues.Add(sudoku[i, j]);
-//		}
-//	}
-
-//	// check 3x3 subgrids
-//	for (int k = 0; k < 9; k++)
-//	{
-//		HashSet<int> subgridValues = new HashSet<int>();
-//		int rowStart = (k / 3) * 3;
-//		int columnStart = (k % 3) * 3;
-//		for (int i = rowStart; i < rowStart + 3; i++)
-//		{
-//			for (int j = columnStart; j < columnStart + 3; j++)
-//			{
-//				if (sudoku[i, j] == 0 || subgridValues.Contains(sudoku[i, j]))
-//				{
-//					return false;
-//				}
-//				subgridValues.Add(sudoku[i, j]);
-//			}
-//		}
-//	}
-
-//	return true;
-//}
-
