@@ -4,8 +4,6 @@
 /* C# program for Sudoku generator  */
 public class CreatedSudoku
 {
-	#region old
-
 	int[,] mat;
 	int N; // number of columns/rows.
 	int SRN; // square root of N
@@ -206,7 +204,7 @@ public class CreatedSudoku
 	public static int[,] Create(string gameMode)
 	{
 		int k = 2;
-		if (gameMode == "easy") { k = 15; }
+		if (gameMode == "easy") { k = 2; }
 		if (gameMode == "medium") { k = 25; }
 		if (gameMode == "hard") { k = 40; }
 		if (gameMode == "expert") { k = 50; }
@@ -227,6 +225,5 @@ public class CreatedSudoku
 			}
 		}
 		return matrx;
-		#endregion
 	}
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj": {}
+    "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj": {
+    "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\99455\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\obj\\",
+        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\99455\\AppData\\Roaming\\NuGet\\NuGet.Config",

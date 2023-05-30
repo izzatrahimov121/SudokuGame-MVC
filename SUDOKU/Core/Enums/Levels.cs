@@ -10,10 +10,6 @@ public enum Levels
     Silver2, 
     Silver3, 
 
-    Gold1, 
-    Gold2, 
-    Gold3, 
-
     Platinum1, 
     Platinum2, 
     Platinum3, 
@@ -22,7 +18,5 @@ public enum Levels
     Diamond2, 
     Diamond3, 
 
-    Master1,
-    Master2,
-    Master3
+    Master,
 }

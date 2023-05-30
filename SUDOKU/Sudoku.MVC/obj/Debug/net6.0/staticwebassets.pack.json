@@ -1,75 +1,87 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_1.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_1.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_1.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_10.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_10.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_10.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_11.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_11.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_11.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_12.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_12.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_12.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_2.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_2.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_2.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_3.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_3.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_3.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_4.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_4.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_4.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_5.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_5.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_5.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_6.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_6.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_6.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_7.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_7.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_7.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_8.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_8.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_8.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_9.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_9.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_9.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\gameOver.jpeg",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\gameOver.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\gameOver.jpeg"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\sudoku-background.jpeg",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\sudoku-background.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\sudoku-background.jpeg"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\user\\default_user_photo.png",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\user\\default_user_photo.png",
       "PackagePath": "staticwebassets\\assets\\images\\user\\default_user_photo.png"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.css",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\jquery.js",
+      "PackagePath": "staticwebassets\\assets\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\jquery.min.map",
+      "PackagePath": "staticwebassets\\assets\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.css",
       "PackagePath": "staticwebassets\\assets\\sudokuJS.css"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.js",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.js",
       "PackagePath": "staticwebassets\\assets\\sudokuJS.js"
     },
     {
-      "Id": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\video\\sudoku-background.mp4",
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\video\\sudoku-background.mp4",
       "PackagePath": "staticwebassets\\assets\\video\\sudoku-background.mp4"
     },
     {

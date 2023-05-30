@@ -4,6 +4,9 @@ namespace Sudoku.MVC.ViewModels.Auth;
 
 public class LoginViewModel
 {
+
+
+
     [Required, MaxLength(255)]
     public string? UserNameOrEmail { get; set; } = null!;
 

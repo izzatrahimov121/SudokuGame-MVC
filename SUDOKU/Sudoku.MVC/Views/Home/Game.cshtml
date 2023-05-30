@@ -1,7 +1,7 @@
 ﻿@model GameViewModel
 
 @{
-	Layout = null;
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -280,67 +280,6 @@
 </head>
 
 <body style="background-color: #abe4fc;">
-	<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #00b3ff;">
-		<div class="container-fluid">
-			<div class="navbar-nav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="navbar-brand" href="../game/user-profile.html">
-							<img src="../assets/images/user/default_user_photo.png" alt="Avatar Logo"
-								 style="width:50px;" class="rounded-pill">
-						</a>
-					</li>
-					<li class="nav-item">
-						<div class="dropdown">
-							<a style="margin-top: 7px ;background-color: #00b3ff00; border: none;color:black; font-size: 20px;"
-							   class="nav-link h6 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
-							   aria-haspopup="true" aria-expanded="false">
-								Player
-							</a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="user-profile.html">
-									<i class="fa fa-user"
-									   aria-hidden="true"></i> My
-									account
-								</a>
-								<a class="dropdown-item" href="#">
-									<i class="fa fa-sign-out" aria-hidden="true"></i> Log
-									out
-								</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-
-			</div>
-			<ul class="navbar-nav d-flex">
-				<li class="nav-item" style="margin-right: 15px;">
-					<a class="nav-link h6" href="index.html" style="font-size: 20px;">
-						<i class="fa fa-home"
-						   aria-hidden="true"></i> Home
-					</a>
-				</li>
-				<li class="nav-item" style="margin-right: 15px;">
-					<a class="nav-link h6" href="index.html" style="font-size: 20px;">
-						<i class="fa-solid fa-ranking-star"></i>
-						Level: Test
-					</a>
-				</li>
-				<li class="nav-item" style="margin-right: 15px;">
-					<a class="nav-link h6" href="awards.html" style="font-size: 20px;">
-						<i class="fa fa-trophy"
-						   aria-hidden="true"></i> Awards
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link h6" href="world-ranking.html" style="font-size: 20px;">
-						<i class="fa fa-globe"
-						   aria-hidden="true"></i> World Ranking: 11
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
 
 	<style>
 		input[type="number"]::-webkit-inner-spin-button,
@@ -380,15 +319,15 @@
 				<img src="../assets/images/gameOver.jpeg" width="250" height="150">
 			</div>
 			<div class="rate bg-primary py-3 text-white mt-3">
-				<h3><i class="fa-light fa-hourglass-end fa-spin fa-xs"></i> 	&#xf2f2 <p class="timer"></p></h3>
-				<h3>Score: 260</h3>
+				<h3> <p class="timer"></p></h3>
+				<h3 id="score"></h3>
 				<div class="rating justify-content-center">
 					<label id="star1" style="font-size: 50px;"><strong>&#11088</strong></label>
 					<label id="star2" style="font-size: 50px;"><strong>&#11088</strong></label>
 					<label id="star3" style="font-size: 50px;"><strong>&#11088</strong></label>
 				</div>
 				<div class="buttons px-4 mt-0">
-					<button class="btn btn-warning btn-block rating-submit" style="height: 50px;">OK</button>
+					<button type="submit" id="btnpost" class="btn btn-warning btn-block rating-submit" style="height: 50px;">OK</button>
 				</div>
 			</div>
 		</div>
@@ -402,7 +341,8 @@
 
 
 
-
+		<script src="~/assets/jquery.js"></script>
+		<script src="~/assets/jquery.min.js"></script>
 
 		<script>
 			//input validation
@@ -415,7 +355,6 @@
 					val.value = "";
 				}
 			}
-
 			$('.myInput').keyup(function () {
 				let val = $(this).val();
 				if (val > 9 || val < 1) {
@@ -471,18 +410,92 @@
 			//end timer
 
 
-
-
 			//game
 			var failed = 0;
-			function endGame(){
+			function endGame() {
 				pauseTimer();
 				document.querySelector('#grid').style.display = "none";
 				document.querySelector('#timerarea').style.display = "none";
 				document.querySelector('#pauseButton').style.display = "none";
 				document.querySelector('#resumeButton').style.display = "none";
 				document.querySelector('#card').style.display = "block";
+				var star = 0, score = 0;
+				var mode = "@ViewBag.Mode";
+				if (failed == 1)
+					star = 2;
+				if (failed == 2)
+					star = 1;
+				if (failed == 0)
+					star = 3;
+				if (failed == 3) {
+					if (mode == "easy") { score = -15 }
+					if (mode == "medium") { score = -25 }
+					if (mode == "hard") { score = -35 }
+					if (mode == "expert") { score = -50 }
+					if (mode == "evil") { score = -65 }
+				}
+				if (mode == "easy") {
+					if (star == 1)
+						score = 10;
+					if (star == 2)
+						score = 20;
+					if (star == 3)
+						score = 30;
+				}
+				if (mode == "medium") {
+					if (star == 1)
+						score = 20;
+					if (star == 2)
+						score = 30;
+					if (star == 3)
+						score = 40;
+				}
+				if (mode == "hard") {
+					if (star == 1)
+						score = 35;
+					if (star == 2)
+						score = 45;
+					if (star == 3)
+						score = 55;
+				}
+				if (mode == "expert") {
+					if (star == 1)
+						score = 50;
+					if (star == 2)
+						score = 60;
+					if (star == 3)
+						score = 70;
+				}
+				if (mode == "evil") {
+					if (star == 1)
+						score = 55;
+					if (star == 2)
+						score = 65;
+					if (star == 3)
+						score = 80;
+				}
+
+
+				$("#btnpost").click(function () {
+					$.ajax({
+						url: '/home/gamepost',
+						type: 'POST',
+						data: {
+							star: star,
+							score: score,
+						},
+						success: function (result) {
+							console.log(result)
+						}
+					});
+					console.log(star, score);
+				})
+
+
+				document.querySelector('#score').textContent = "Score: " + score;
 			}
+
+
 			$('.myInput').keyup(function (e) {
 				var keyCode = e.keyCode;
 				if (keyCode >= 49 && keyCode <= 57 || keyCode >= 97 && keyCode <= 105) {
@@ -501,7 +514,7 @@
 					else {
 						inp.style.backgroundColor = "#ee6460"
 						failed++;
-						count=82;
+						count = 82;
 					}
 					if (failed == 3) {
 						document.querySelector("#star1").style.display = "none";
@@ -515,7 +528,6 @@
 						if (input[i].value != "") {
 							count++;
 						}
-						console.log(count);
 					}
 					if (failed < 3 && count == 81) {
 						if (failed == 1) {
@@ -530,7 +542,7 @@
 					else { count = 0 }
 				}
 			})
-						//end game
+																				//end game
 
 		</script>
 

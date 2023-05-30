@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj": {}
+    "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj": {
+    "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\99455\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\obj\\",
+        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\99455\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\99455\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\99455\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,8 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj"
+              "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj"
               }
             }
           }
@@ -178,14 +178,14 @@
         }
       }
     },
-    "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj": {
+    "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj",
+        "projectUniqueName": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj",
         "projectName": "Sudoku.MVC",
-        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj",
+        "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj",
         "packagesPath": "C:\\Users\\99455\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\obj\\",
+        "outputPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\99455\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -202,11 +202,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Core\\Core.csproj"
+              "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Core\\Core.csproj"
               },
-              "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -252,6 +252,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             }
           },
           "imports": [

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nRj5kRaC2tZaCs89BxV+d994y0eFtm7RMcRqHYPVC+aBX3Hc6A2iSc8TW94A5MAjaxL+/Ww6m1DwyAWcrKVrjw==",
+  "dgSpecHash": "Yu/EmnFIRLD+2YZUh6BD769ZfQJAOP0sWs//HN+HyOxLvxHZzbTfs92fqJVucWZwrKIho+S+4xR1faPFEgmQsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj",
+  "projectFilePath": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\Sudoku.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\99455\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\99455\\.nuget\\packages\\jquery\\3.7.0\\jquery.3.7.0.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\99455\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",

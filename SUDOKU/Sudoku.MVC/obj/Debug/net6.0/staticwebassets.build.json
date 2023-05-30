@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BxiCLh7l50UBfAgWL+LaGFYUh37dX2UmIAsH0bDcZJg=",
+  "Hash": "5287xwirTS/I97eRO84VdgMZpdA7EQ3933cnNQqcGEM=",
   "Source": "Sudoku.MVC",
   "BasePath": "_content/Sudoku.MVC",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Sudoku.MVC\\wwwroot",
       "Source": "Sudoku.MVC",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_1.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_1.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_1.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_1.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_10.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_10.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_10.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_10.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_11.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_11.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_11.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_11.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_12.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_12.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_12.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_12.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_2.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_2.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_2.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_2.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_3.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_3.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_3.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_3.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_4.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_4.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_4.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_4.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_5.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_5.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_5.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_5.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_6.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_6.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_6.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_6.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_7.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_7.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_7.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_7.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_8.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_8.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_8.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_8.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_9.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_9.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/cups/cup_9.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cups\\cup_9.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\gameOver.jpeg",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\gameOver.jpeg",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/gameOver.jpeg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\gameOver.jpeg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\sudoku-background.jpeg",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\sudoku-background.jpeg",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/sudoku-background.jpeg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\sudoku-background.jpeg"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\user\\default_user_photo.png",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\user\\default_user_photo.png",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/images/user/default_user_photo.png",
       "AssetKind": "All",
@@ -272,10 +272,61 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\user\\default_user_photo.png"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.css",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\jquery.js",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "BasePath": "_content/Sudoku.MVC",
+      "RelativePath": "assets/jquery.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\jquery.js"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\jquery.min.js",
+      "SourceId": "Sudoku.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "BasePath": "_content/Sudoku.MVC",
+      "RelativePath": "assets/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\jquery.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\jquery.min.map",
+      "SourceId": "Sudoku.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "BasePath": "_content/Sudoku.MVC",
+      "RelativePath": "assets/jquery.min.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\jquery.min.map"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.css",
+      "SourceId": "Sudoku.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/sudokuJS.css",
       "AssetKind": "All",
@@ -289,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\sudokuJS.css"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.js",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\sudokuJS.js",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/sudokuJS.js",
       "AssetKind": "All",
@@ -306,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\sudokuJS.js"
     },
     {
-      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\video\\sudoku-background.mp4",
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\video\\sudoku-background.mp4",
       "SourceId": "Sudoku.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGameMVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
       "BasePath": "_content/Sudoku.MVC",
       "RelativePath": "assets/video/sudoku-background.mp4",
       "AssetKind": "All",
