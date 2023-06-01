@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\game.css",
+      "PackagePath": "staticwebassets\\assets\\game.css"
+    },
+    {
       "Id": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_1.png",
       "PackagePath": "staticwebassets\\assets\\images\\cups\\cup_1.png"
     },

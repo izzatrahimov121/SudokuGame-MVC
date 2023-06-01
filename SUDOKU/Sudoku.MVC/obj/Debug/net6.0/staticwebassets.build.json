@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5287xwirTS/I97eRO84VdgMZpdA7EQ3933cnNQqcGEM=",
+  "Hash": "nQg50oG6L/9LAmBIQnLAEGq5Id4YJ1c5bINnNaFZJGs=",
   "Source": "Sudoku.MVC",
   "BasePath": "_content/Sudoku.MVC",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\game.css",
+      "SourceId": "Sudoku.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "BasePath": "_content/Sudoku.MVC",
+      "RelativePath": "assets/game.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\game.css"
+    },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\cups\\cup_1.png",
       "SourceId": "Sudoku.MVC",

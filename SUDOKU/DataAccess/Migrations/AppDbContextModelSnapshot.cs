@@ -286,7 +286,7 @@ namespace DataAccess.Migrations
                     b.Property<int?>("SuccessfulGames")
                         .HasColumnType("int");
 
-                    b.Property<int?>("TotalScore")
+                    b.Property<int>("TotalScore")
                         .HasColumnType("int");
 
                     b.HasDiscriminator().HasValue("AppUser");
