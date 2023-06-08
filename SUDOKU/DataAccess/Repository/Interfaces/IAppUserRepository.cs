@@ -1,5 +1,8 @@
-﻿namespace DataAccess.Repository.Interfaces;
+﻿using Core.Entities;
 
-public interface IAppUserRepository
+namespace DataAccess.Repository.Interfaces;
+
+public interface IAppUserRepository : IRepository<AppUser>
 {
+
 }

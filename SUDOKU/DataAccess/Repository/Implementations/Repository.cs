@@ -1,4 +1,7 @@
-﻿using Core.Interfaces;
+﻿
+
+
+
 using DataAccess.Contexts;
 using DataAccess.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +9,7 @@ using System.Linq.Expressions;
 
 namespace DataAccess.Repository.Implementations;
 
-public class Repository<T>:IRepository<T> where T : class,IEntity,new()
+public class Repository<T>:IRepository<T> where T : class,new()
 {
     private readonly AppDbContext _context;
 

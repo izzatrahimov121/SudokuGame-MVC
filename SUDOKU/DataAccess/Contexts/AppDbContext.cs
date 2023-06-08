@@ -13,4 +13,5 @@ public class AppDbContext : IdentityDbContext
 
     public DbSet<AppUser> AppUsers { get; set; } = null!;
     public DbSet<Awards> Awards { get; set; } = null!;
+    public DbSet<WorldRayting> WorldRaytings { get; set; }=null!;
 }

@@ -1,7 +1,12 @@
+
+
 using Core.Entities;
 using DataAccess.Contexts;
+using DataAccess.Repository.Implementations;
+using DataAccess.Repository.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Sudoku.MVC.HelperService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +35,22 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     .AddEntityFrameworkStores<AppDbContext>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();//for frogot passwod
+
+
+
+//add services
+builder.Services.AddScoped<WorldRayting>();
+builder.Services.AddScoped<IWorldRaytingRepository, WorldRaytingRepository>();
+builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
+
+//add BackgroundService
+builder.Services.AddHostedService<MyBackgroundService>();
+builder.Services.AddLogging(loggingBuilder =>
+{
+    loggingBuilder.AddConsole();
+    loggingBuilder.AddDebug();
+});
+//end BackgroundService
 
 
 

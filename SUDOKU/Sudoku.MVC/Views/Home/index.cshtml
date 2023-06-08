@@ -15,7 +15,7 @@
 
 
 		<div class="d-flex justify-content-center" style="margin-top: 30px">
-			@using (Html.BeginForm("Index","Home",FormMethod.Post))
+			@using (Html.BeginForm("Index1","Home",FormMethod.Post))
 			{
 				@Html.RadioButtonFor(m=>m.GameMode,"easy",new { id = "btn-check-easy", @class = "btn-check" });
 				@*<input asp-for="GameMode" type="radio" class="btn-check" value="easy" id="btn-check-easy">*@

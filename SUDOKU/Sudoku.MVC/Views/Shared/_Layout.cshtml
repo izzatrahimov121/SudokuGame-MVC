@@ -1,9 +1,9 @@
-﻿
+﻿@model HomeViewModel
 @{
-    string username = ViewBag.UserName;
-    string UserProfilPhoto = ViewBag.UserProfilPhoto;
-    string level = ViewBag.Level;
-    string rank = ViewBag.WorldRanking;
+    //string username = ViewBag.UserName;
+    //string UserProfilPhoto = ViewBag.UserProfilPhoto;
+    //string level = ViewBag.Level;
+    //string rank = ViewBag.WorldRanking;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudoku.az</title>
+    <title>Sudoku | World Rayting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -37,7 +37,7 @@
             <div class="navbar-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                            <img src="../assets/images/user/@UserProfilPhoto" alt="Avatar Logo"
+                            <img src="../assets/images/user/@Model.UserProfilPhoto" alt="Avatar Logo"
                                 style="width:50px;" class="rounded-pill">
                     </li>
                     <li class="nav-item">
@@ -45,7 +45,7 @@
                             <a style="margin-top: 7px ;background-color: #00b3ff00; border: none;color:black; font-size: 20px;"
                                 class="nav-link h6 dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                @username
+                                @Model.UserName
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="user-profile.html"><i class="fa fa-user"
@@ -66,7 +66,7 @@
                 <li class="nav-item" style="margin-right: 15px;">
                     <a class="nav-link h6" href="index.html" style="font-size: 20px;">
                         <i class="fa-solid fa-ranking-star"></i>
-                        Level: @level
+                        Level: @Model.Level
                     </a>
                 </li>
                 <li class="nav-item" style="margin-right: 15px;">
@@ -74,8 +74,10 @@
                             aria-hidden="true"></i> Awards</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link h6" href="world-ranking.html" style="font-size: 20px;"><i class="fa fa-globe"
-                            aria-hidden="true"></i> World Ranking: @rank</a>
+                    <a asp-action="WorldRayting" class="nav-link h6" style="font-size: 20px;">
+                        <i class="fa fa-globe"
+                           aria-hidden="true"></i> World Ranking: @Model.WorldRanking
+                    </a>
                 </li>
             </ul>
         </div>

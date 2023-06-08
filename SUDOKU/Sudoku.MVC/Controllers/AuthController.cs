@@ -64,6 +64,12 @@ public class AuthController : Controller
         }
 
         await _userManager.AddToRoleAsync(appUser,Roles.BasicUser.ToString());
+
+
+
+
+
+
         return RedirectToAction(nameof(Login));
     }
     #endregion
