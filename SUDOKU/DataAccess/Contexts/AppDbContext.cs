@@ -7,7 +7,8 @@ namespace DataAccess.Contexts;
 
 public class AppDbContext : IdentityDbContext
 {
-    public AppDbContext(DbContextOptions options) : base(options)
+
+	public AppDbContext(DbContextOptions options) : base(options)
     {
     }
 

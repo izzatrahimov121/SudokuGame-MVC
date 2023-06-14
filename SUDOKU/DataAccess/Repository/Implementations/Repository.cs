@@ -38,7 +38,7 @@ public class Repository<T>:IRepository<T> where T : class,new()
 
     public void Update(T entity)
     {
-        Table.Update(entity);
+       Table.Update(entity);
     }
     public async Task SaveAsync() => await _context.SaveChangesAsync();
 }

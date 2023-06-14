@@ -13,6 +13,8 @@ public class RegisterViewModel
     [Required, DataType(DataType.Password), MinLength(8)]
     public string? Password { get; set; }
 
-    [Required, DataType(DataType.Password), Compare("Password")]
+    [Required, DataType(DataType.Password), Compare(nameof(Password)),MinLength(8)]
     public string? ConfirmPassword { get; set; }
+
+
 }

@@ -7,6 +7,8 @@ using DataAccess.Repository.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Sudoku.MVC.HelperService;
+using Sudoku.MVC.HelperService.Implementations;
+using Sudoku.MVC.HelperService.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +44,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 builder.Services.AddScoped<WorldRayting>();
 builder.Services.AddScoped<IWorldRaytingRepository, WorldRaytingRepository>();
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 //add BackgroundService
 builder.Services.AddHostedService<MyBackgroundService>();
