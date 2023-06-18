@@ -16,7 +16,7 @@ public class FileService : IFileService
             {
                 throw new IncorrectFileFormatException("Incorrect file format");
             }
-            if (!file.CheckFileSize(20))
+            if (!file.CheckFileSize(30000))
             {
                 throw new IncorrectFileFormatException("Incorrect file size");
             }

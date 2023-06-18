@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nQg50oG6L/9LAmBIQnLAEGq5Id4YJ1c5bINnNaFZJGs=",
+  "Hash": "RTDGevtZYWw6HVOKNcBCq29d5ro3rKZF0w+6pEo+iB8=",
   "Source": "Sudoku.MVC",
   "BasePath": "_content/Sudoku.MVC",
   "Mode": "Default",
@@ -270,6 +270,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\sudoku-background.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\user\\244e5be3-58ea-402e-b6dc-44dee06aa906WhatsApp Image 2023-06-12 at 12.29.54.jpeg",
+      "SourceId": "Sudoku.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "BasePath": "_content/Sudoku.MVC",
+      "RelativePath": "assets/images/user/244e5be3-58ea-402e-b6dc-44dee06aa906WhatsApp Image 2023-06-12 at 12.29.54.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\user\\244e5be3-58ea-402e-b6dc-44dee06aa906WhatsApp Image 2023-06-12 at 12.29.54.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\user\\277bfd4a-880e-40e2-a937-da5ea664480bWhatsApp Image 2023-06-12 at 11.56.07 (1).jpeg",
+      "SourceId": "Sudoku.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\",
+      "BasePath": "_content/Sudoku.MVC",
+      "RelativePath": "assets/images/user/277bfd4a-880e-40e2-a937-da5ea664480bWhatsApp Image 2023-06-12 at 11.56.07 (1).jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\user\\277bfd4a-880e-40e2-a937-da5ea664480bWhatsApp Image 2023-06-12 at 11.56.07 (1).jpeg"
     },
     {
       "Identity": "C:\\Users\\99455\\Desktop\\SudokuGame-MVC\\SUDOKU\\Sudoku.MVC\\wwwroot\\assets\\images\\user\\default_user_photo.png",

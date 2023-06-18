@@ -37,16 +37,13 @@ public class MyBackgroundService : BackgroundService
 
 
 					var users = await _appUserRepository.FindAll().ToListAsync();
-					WorldRayting raytingDto = new WorldRayting();
 					foreach (var user in users)
 					{
-						var status = 0;
 						var raytings = await _worldRaytingRepository.FindAll().ToListAsync();
 						foreach (var ray in raytings)
 						{
 							if (ray.UserId == user.Id)
 							{
-								status = 1;
 								ray.Photo = user.ProfilPhoto;
 								ray.ThreeStar = user.SuccessfulGames;
 								ray.TotalScore = user.TotalScore;
@@ -55,17 +52,6 @@ public class MyBackgroundService : BackgroundService
 								_worldRaytingRepository.Update(ray);
 								await _worldRaytingRepository.SaveAsync();
 							}
-						}
-						if (status == 0)
-						{
-							raytingDto.Photo = user.ProfilPhoto;
-							raytingDto.ThreeStar = user.SuccessfulGames;
-							raytingDto.TotalScore = user.TotalScore;
-							raytingDto.UserName = user.UserName;
-							raytingDto.UserId = user.Id;
-							raytingDto.Rayting = raytings.Count;
-							await _worldRaytingRepository.CreateAsync(raytingDto);
-							await _worldRaytingRepository.SaveAsync();
 						}
 					}
 

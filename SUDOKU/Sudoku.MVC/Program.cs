@@ -9,11 +9,15 @@ using Microsoft.EntityFrameworkCore;
 using Sudoku.MVC.HelperService;
 using Sudoku.MVC.HelperService.Implementations;
 using Sudoku.MVC.HelperService.Interfaces;
+using Sudoku.MVC.Utilites.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
@@ -45,6 +49,7 @@ builder.Services.AddScoped<WorldRayting>();
 builder.Services.AddScoped<IWorldRaytingRepository, WorldRaytingRepository>();
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
 builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IMailService, MailService>();
 
 //add BackgroundService
 builder.Services.AddHostedService<MyBackgroundService>();

@@ -1,5 +1,4 @@
 ﻿using Core.Interfaces;
-using System.ComponentModel.DataAnnotations;
 
 namespace Core.Entities;
 

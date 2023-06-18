@@ -1,4 +1,6 @@
-﻿@model UserProfileViewModel
+﻿
+
+@model UserProfileViewModel
 @{
 	Layout = null;
 }
@@ -22,8 +24,9 @@
 
 
 <body style="background-color: #9de2ff;">
-	<a class="btn btn-success" href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Back Home </a>
-	<form class="form" method="post" id="registrationForm">
+	<a class="btn btn-success" asp-action="Index" asp-controller="Home"><i class="fa fa-sign-out" aria-hidden="true"></i> Back Home </a>
+	<form class="form" method="post" id="registrationForm" enctype="multipart/form-data">
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 		<div class="container bootstrap snippet" style="margin-top: 50px;">
 			<div class="row">
 				<div class="row">
@@ -36,7 +39,7 @@
 							<img src="~/assets/images/user/@Model.ProfilPhoto" class="avatar img-circle img-thumbnail"
 								 alt="avatar">
 							<h6>Upload a different photo...</h6>
-							<input asp-for="Image" type="file" class="text-center center-block file-upload">
+							<input asp-for="Image" name="Image" type="file" class="text-center center-block file-upload form-control form-dis" disabled>
 						</div>
 						</hr><br>
 
@@ -55,7 +58,7 @@
 							<li class="list-group-item text-right">
 								<span class="pull-left">
 									<strong>
-										&#11088&#11088&#11088
+										&#11088 &#11088 &#11088
 										:
 									</strong>
 								</span> @Model.ThreeStar
@@ -75,8 +78,9 @@
 										<label for="first_name">
 											<h4>User name</h4>
 										</label>
-										<input asp-for="Username" type="text" class="form-control" name="first_name" id="first_name"
-											   placeholder="user name" title="enter your first name if any." disabled>
+										@Html.
+										<input asp-for="Username" type="text" class="form-control form-dis" name="Username" id="username"
+											   placeholder="enter name" title="enter your user name number if any." disabled>
 									</div>
 								</div>
 
@@ -86,7 +90,7 @@
 										<label for="phone">
 											<h4>Phone</h4>
 										</label>
-										<input asp-for="Phone" type="text" class="form-control" name="phone" id="phone"
+										<input asp-for="Phone" type="text" class="form-control form-dis" name="phone" id="phone"
 											   placeholder="enter phone" title="enter your phone number if any." disabled>
 									</div>
 								</div>
@@ -97,42 +101,21 @@
 										<label for="email">
 											<h4>Email</h4>
 										</label>
-										<input asp-for="Email" type="email" class="form-control" name="email" id="email"
-											   placeholder="you@email.com" title="enter your email." disabled>
+										<input asp-for="Email" type="email" class="form-control form-dis" name="email" id="email"
+											   placeholder="your@email.com" title="enter your email." disabled>
 									</div>
 								</div>
-								<div class="form-group">
-
-									<div class="col-xs-6">
-										<label for="password">
-											<h4>Password</h4>
-										</label>
-										<input asp-for="Password" type="password" class="form-control" name="password" id="password"
-											   placeholder="new password" title="enter your new password." disabled>
-									</div>
-								</div>
-								<div class="form-group">
-
-									<div class="col-xs-6">
-										<label for="password2">
-											<h4>Verify</h4>
-										</label>
-										<input asp-for="CompletedGames" type="password" class="form-control" name="confirm password" id="password2"
-											   placeholder="password2" title="enter your password2." disabled>
-									</div>
-								</div>
-
-
+						
 								<div class="form-group">
 									<div class="col-xs-12">
 										<br>
 										<button class="btn btn-lg btn-secondary" id="btnChence">
 											<i class="fa fa-pencil" aria-hidden="true"></i> Chance infotmation
 										</button>
-										<button class="btn btn-lg btn-dark" id="btnReset">
+										<a asp-action="UserProfile" class="btn btn-lg btn-dark" id="btnReset">
 											<i class="fa fa-repeat" aria-hidden="true"></i> Reset
-										</button>
-										<button class="btn btn-lg btn-success" id="btnSave" type="submit">
+										</a>
+										<button class="btn btn-lg btn-success form-dis" id="btnSave" type="submit" disabled>
 											<i class="fa fa-check" aria-hidden="true"></i> Save
 										</button>
 									</div>
@@ -148,11 +131,7 @@
 	<script>
 		$('#btnChence').click(function () {
 			event.preventDefault();
-			$(".form-control[disabled]").prop("disabled", false);
-		})
-
-		$('#btnReset').click(function () {
-			location.reload();
+			$(".form-dis[disabled]").prop("disabled", false);
 		})
 	</script>
 </body>

@@ -4,7 +4,7 @@ namespace Sudoku.MVC.ViewModels.Auth;
 
 public class UserProfileViewModel
 {
-	[Required, MaxLength(255)]
+	[Required(ErrorMessage = "Boş buraxmayın"), MaxLength(255,ErrorMessage ="Usunluq 255-i keçib")]
 	public string? Username { get; set; } 
 
 
@@ -12,20 +12,13 @@ public class UserProfileViewModel
 	public IFormFile? Image { get; set; }
 
 
-	[Required, DataType(DataType.EmailAddress), MaxLength(255)] 
+	[Required(ErrorMessage = "Boş buraxmayın"), DataType(DataType.EmailAddress,ErrorMessage ="Düzgün mail dexil edin"), MaxLength(255)] 
 	public string? Email { get; set; }
 
 
-	[DataType(DataType.PhoneNumber), MaxLength(20)]
+	[DataType(DataType.PhoneNumber,ErrorMessage ="Düzgün telefon nömrəsi daxil edin"), MaxLength(20,ErrorMessage ="Format düzgün deyil")]
 	public string? Phone { get; set; }
 
-
-	[DataType(DataType.Password), MinLength(8)]
-	public string? Password { get; set; }
-
-
-	[DataType(DataType.Password), Compare(nameof(Password)), MinLength(8)]
-	public string? ConfirmPassword { get; set; }
 
 
 	public int CompletedGames { get; set; } = 0;
