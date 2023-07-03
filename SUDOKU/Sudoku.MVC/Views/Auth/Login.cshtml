@@ -59,7 +59,7 @@
 							<!-- Checkbox -->
 							<div class="form-check">
 								<input asp-for="RememberMe" class="form-check-input" type="checkbox" id="check1" />
-								<label class="form-check-label" for="form1Example3"> Remember me  |  <a href="#!">Forgot password?</a> </label>
+								<label class="form-check-label" for="form1Example3"> Remember me  |  <a asp-action="ForgotPassword" asp-controller="Auth">Forgot password?</a> </label>
 							</div>
 							
 						</div>

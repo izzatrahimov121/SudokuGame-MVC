@@ -150,7 +150,7 @@ public class HomeController : Controller
         string type = Request.Form["btn1"];
         var urlHelper = urlHelperFactory.GetUrlHelper(ControllerContext);
         string redirectUrl = urlHelper.Action("WorldRayting", "Home", new { type });
-        return Json((new { redirectUrl }));
+        return Json(new { redirectUrl });
     }
 
 }

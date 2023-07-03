@@ -56,7 +56,7 @@ public class MyBackgroundService : BackgroundService
 					}
 
 
-					await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken); //delay
+					await Task.Delay(TimeSpan.FromMinutes(10), stoppingToken); //delay
 				}
 
 				using (var scope = _services.CreateScope())
@@ -72,7 +72,7 @@ public class MyBackgroundService : BackgroundService
 					}
 					await _worldRaytingRepository.SaveAsync();
 
-					await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken); //delay
+					await Task.Delay(TimeSpan.FromMinutes(10), stoppingToken); //delay
 				}
 			}
 			catch (Exception ex)

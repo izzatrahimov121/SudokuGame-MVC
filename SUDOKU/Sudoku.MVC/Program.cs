@@ -4,6 +4,7 @@ using Core.Entities;
 using DataAccess.Contexts;
 using DataAccess.Repository.Implementations;
 using DataAccess.Repository.Interfaces;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Sudoku.MVC.HelperService;
@@ -76,8 +77,13 @@ if (!app.Environment.IsDevelopment())
 
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
 app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+	endpoints.MapControllers();
+	endpoints.MapDefaultControllerRoute();
+});
+app.UseStaticFiles();
 
 
 
@@ -85,15 +91,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 
-
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
     );
-
-
-
 
 
 app.Run();
